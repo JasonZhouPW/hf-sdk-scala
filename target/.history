@@ -1,0 +1,25 @@
+sbt update
+sbt build
+sbt build 1
+sbt build boot
+sbt build last
+dir
+exit
+sbt build hf-sdk-scala
+sbt compile
+sbt run
+build
+clean
+compile
+build
+package
+compile
+protobuf:potobufGenerate
+protobuf:protobufGenerate
+compile
+exit
+update
+compile
+last compile:protoGenerate
+last compile:protocGenerate
+compile

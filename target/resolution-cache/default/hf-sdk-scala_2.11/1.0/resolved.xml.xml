@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="default"
+		module="hf-sdk-scala_2.11"
+		revision="1.0"
+		status="integration"
+		publication="20170205205204"
+	>
+		<description>
+		hf-sdk-scala
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="protobuf" visibility="public" description=""/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="hf-sdk-scala_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="hf-sdk-scala_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="hf-sdk-scala_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="hf-sdk-scala_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.5" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.5" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.trueaccord.scalapb" name="scalapb-runtime_2.11" rev="0.5.47" conf="compile->default(compile);protobuf->default(compile)"/>
+		<dependency org="io.grpc" name="grpc-netty" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="io.grpc" name="grpc-protobuf" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="io.grpc" name="grpc-stub" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="io.grpc" name="grpc-auth" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="com.google.protobuf" name="protobuf-java" rev="3.2.0" conf="compile->default(compile)"/>
+		<dependency org="org.bouncycastle" name="bcpkix-jdk15on" rev="1.56" conf="compile->default(compile)"/>
+		<dependency org="commons-cli" name="commons-cli" rev="1.3.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-compress" rev="1.13" conf="compile->default(compile)"/>
+		<dependency org="commons-io" name="commons-io" rev="2.5" conf="compile->default(compile)"/>
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.3" conf="compile->default(compile)"/>
+		<dependency org="org.glassfish" name="javax.json" rev="1.0.4" conf="compile->default(compile)"/>
+		<dependency org="com.trueaccord.scalapb" name="scalapb-runtime-grpc_2.11" rev="0.5.47" conf="compile->default(compile)"/>
+		<dependency org="io.netty" name="netty-tcnative-boringssl-static" rev="1.1.33.Fork19" conf="compile->default(compile)"/>
+		<dependency org="javassist" name="javassist" rev="3.12.1.GA" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>

@@ -1,0 +1,55 @@
+[0m[[0minfo[0m] [0mCompiling 16 protobuf files to C:\MyWork\hf-sdk-scala\target\scala-2.11\src_managed\main[0m
+[0m[[0mdebug[0m] [0mprotoc options:[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\orderer\ab.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\chaincodeevent.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\msp\mspconfig.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\configuration.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\table.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\proposal.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\common\msp_principal.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\msp\identities.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\orderer\configuration.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\peer.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\common\configuration.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\transaction.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\chaincode.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\common\common.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\events.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\MyWork\hf-sdk-scala\src\main\protobuf\peer\proposal_response.proto[0m
+java.lang.RuntimeException: protoc returned exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbtprotoc.ProtocPlugin$.sbtprotoc$ProtocPlugin$$compile(ProtocPlugin.scala:115)
+	at sbtprotoc.ProtocPlugin$$anonfun$sourceGeneratorTask$1$$anonfun$4.apply(ProtocPlugin.scala:142)
+	at sbtprotoc.ProtocPlugin$$anonfun$sourceGeneratorTask$1$$anonfun$4.apply(ProtocPlugin.scala:141)
+	at sbt.FileFunction$$anonfun$cached$1.apply(Tracked.scala:186)
+	at sbt.FileFunction$$anonfun$cached$1.apply(Tracked.scala:186)
+	at sbt.FileFunction$$anonfun$cached$2$$anonfun$apply$3$$anonfun$apply$4.apply(Tracked.scala:200)
+	at sbt.FileFunction$$anonfun$cached$2$$anonfun$apply$3$$anonfun$apply$4.apply(Tracked.scala:196)
+	at sbt.Difference.apply(Tracked.scala:175)
+	at sbt.Difference.apply(Tracked.scala:157)
+	at sbt.FileFunction$$anonfun$cached$2$$anonfun$apply$3.apply(Tracked.scala:196)
+	at sbt.FileFunction$$anonfun$cached$2$$anonfun$apply$3.apply(Tracked.scala:195)
+	at sbt.Difference.apply(Tracked.scala:175)
+	at sbt.Difference.apply(Tracked.scala:151)
+	at sbt.FileFunction$$anonfun$cached$2.apply(Tracked.scala:195)
+	at sbt.FileFunction$$anonfun$cached$2.apply(Tracked.scala:193)
+	at sbtprotoc.ProtocPlugin$$anonfun$sourceGeneratorTask$1.apply(ProtocPlugin.scala:152)
+	at sbtprotoc.ProtocPlugin$$anonfun$sourceGeneratorTask$1.apply(ProtocPlugin.scala:137)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[31merror[0m] [0m(compile:[31mprotocGenerate[0m) protoc returned exit code: 1[0m
