@@ -1,0 +1,9 @@
+package com.wanda.blockchain.fabric.sdk
+
+/**
+  * Created by zhou peiwen on 2017/2/11.
+  */
+class User extends Serializable{
+
+
+}

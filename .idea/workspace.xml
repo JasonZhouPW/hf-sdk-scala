@@ -1,29 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="521da651-e212-4aab-add8-efc58e22757e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/.protoroot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/common/common.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/common/configuration.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/common/msp_principal.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/msp/identities.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/msp/mspconfig.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/orderer/ab.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/orderer/configuration.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/chaincode.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/chaincodeevent.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/configuration.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/events.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/peer.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/proposal.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/proposal_response.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/peer/transaction.proto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/protobuf/table.proto" />
+    <list default="true" id="6d6ca11f-18bf-42fa-ad9f-ea8df69676ac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Chain.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Enrollment.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/EnrollmentRequest.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/GetTCertBatchRequest.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/HFClient.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/KeyValStore.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Orderer.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Peer.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/RegistrationRequest.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/User.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/events/EventHub.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/exception/BaseException.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/exception/EnrollmentException.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServices.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServicesFabricCAImpl.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/security/CryptoPrimitives.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/util/SDKUtil.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$2b4747e3d196a3cbb626$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$2b4747e3d196a3cbb626$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$2b4747e3d196a3cbb626.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$2b4747e3d196a3cbb626.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$481a36b65721a2712a96$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$481a36b65721a2712a96.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$481a36b65721a2712a96.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$61f01aa3e028e0df4d15$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$61f01aa3e028e0df4d15$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$61f01aa3e028e0df4d15.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$61f01aa3e028e0df4d15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$65bf3c7fa8e6509926da$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$65bf3c7fa8e6509926da$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$65bf3c7fa8e6509926da.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$65bf3c7fa8e6509926da.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b21156c9fd7bb8f7cf6d$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b21156c9fd7bb8f7cf6d$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b21156c9fd7bb8f7cf6d.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b21156c9fd7bb8f7cf6d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$cdd7187b5e4949b6e94f$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$cdd7187b5e4949b6e94f$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$cdd7187b5e4949b6e94f.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$cdd7187b5e4949b6e94f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$eb88106f5786d4ce8337$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$eb88106f5786d4ce8337$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$eb88106f5786d4ce8337.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$eb88106f5786d4ce8337.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ede9ec1b21f18adaef5c$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ede9ec1b21f18adaef5c$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ede9ec1b21f18adaef5c.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ede9ec1b21f18adaef5c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f631bbaa5776eda7121f$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f631bbaa5776eda7121f$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f631bbaa5776eda7121f.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f631bbaa5776eda7121f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala$sbt_2.11/1.0/resolved.xml.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala$sbt_2.11/1.0/resolved.xml.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala$sources_2.11/1.0/resolved.xml.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala$sources_2.11/1.0/resolved.xml.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sbt_2.11-default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-compile-internal.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-compile.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-docs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-optional.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-protobuf.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-provided.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-runtime-internal.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-runtime.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-scala-tool.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-sources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-test-internal.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala$sources_2.11-test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/hf-sdk-scala_2.11-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/mainClass/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/output" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/protobuf/protobufGenerate/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/protobuf/protobufGenerate/$global/streams/protobuf_2.11/in-cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/protobuf/protobufGenerate/$global/streams/protobuf_2.11/out-cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/protobuf/protobufRunProtoc/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/protobuf/protobufUnpackDependencies/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/$global/streams/export" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/$global/streams/export" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/$global/streams/export" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/unmanagedJars/$global/streams/export" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/$global/$global/discoveredMainClasses/data" afterPath="$PROJECT_DIR$/target/streams/compile/$global/$global/discoveredMainClasses/data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/hf-sdk-scala-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/hf-sdk-scala-build.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/hf-sdk-scala.iml" afterPath="$PROJECT_DIR$/.idea/modules/hf-sdk-scala.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/hf-sdk-scala-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/hf-sdk-scala-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/hf-sdk-scala-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/hf-sdk-scala-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-hf-sdk-scala-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/any.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/any.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/api.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/api.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/compiler/plugin.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/compiler/plugin.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/descriptor.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/descriptor.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/duration.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/duration.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/empty.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/empty.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/field_mask.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/field_mask.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/source_context.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/source_context.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/struct.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/struct.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/timestamp.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/timestamp.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/type.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/type.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/wrappers.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/google/protobuf/wrappers.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protobuf_external/scalapb/scalapb.proto" afterPath="$PROJECT_DIR$/target/protobuf_external/scalapb/scalapb.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/hf-sdk-scala_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-protobuf.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-protobuf.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-hf-sdk-scala_2.11-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.css" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.xsl" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ivy-report.xsl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/protocGenerate/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/protocUnpackDependencies/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/protocUnpackDependencies/$global/streams/out" />
     </list>
-    <ignored path="hf-sdk-scala.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -44,115 +203,171 @@
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
-    <system id="SBT">
+    <system id="GRADLE">
       <state>
         <projects_view>
           <tree_state />
         </projects_view>
       </state>
     </system>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="hf-sdk-scala" />
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="hf-sdk-scala" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="hf-sdk-scala" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="hf-sdk-scala" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="build.sbt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.sbt">
+      <file leaf-file-name="Chain.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Chain.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.trueaccord.scalapb/compilerplugin_2.10/jars/compilerplugin_2.10-0.5.47.jar!/com/trueaccord/scalapb/compiler/Version.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mspconfig.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/protobuf/msp/mspconfig.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="table.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/protobuf/table.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/protobuf/common/common.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="280">
+              <caret line="161" column="8" lean-forward="false" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#41#95#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugins.sbt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+      <file leaf-file-name="HFClient.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/HFClient.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <folding>
+                <element signature="e#41#139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SDKMain.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/SDKMain.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scalapb.sbt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/scalapb.sbt">
+      <file leaf-file-name="GetTCertBatchRequest.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/GetTCertBatchRequest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            <state relative-caret-position="130">
+              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <file leaf-file-name="MemberServices.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServices.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1326">
+              <caret line="51" column="53" lean-forward="false" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+              <folding>
+                <element signature="e#55#95#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemberServicesFabricCAImpl.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServicesFabricCAImpl.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2184">
+              <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+              <folding>
+                <element signature="e#54#110#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Enrollment.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Enrollment.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+              <folding>
+                <element signature="e#41#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnrollmentException.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/exception/EnrollmentException.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SDKUtil.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/util/SDKUtil.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="781">
+              <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+              <folding>
+                <element signature="e#46#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dell</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>zhou peiwen</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/../kafka-trunk" value="4443039324000" />
-        <entry key="C:/work/corda/corda" value="29622454939187" />
-        <entry key="C:/work/cordapp-template" value="5937903325951" />
-        <entry key="C:/work/kafka/kafka" value="4450060552986" />
-      </map>
-    </option>
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -160,9 +375,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project/scalapb.sbt" />
-        <option value="$PROJECT_DIR$/project/plugins.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/main.scala" />
+        <option value="$PROJECT_DIR$/project/build.properties" />
         <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/table/Column.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/User.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/KeyValStore.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Peer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Orderer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/events/EventHub.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/MemberServices.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/util/Test.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/EnrollmentRequest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServices.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/security/CryptoPrimitives.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/util/SDKUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/exception/BaseException.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/exception/EnrollmentException.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Enrollment.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServicesFabricCAImpl.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/SDKMain.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Chain.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/HFClient.scala" />
       </list>
     </option>
   </component>
@@ -172,28 +406,72 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1942" />
-    <option name="height" value="1042" />
+    <option name="x" value="1911" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>GSPGrailsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralScala</id>
+          </State>
+          <State>
+            <id>GrailsGroovy</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Scala</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>KindProjectorUseCorrectLambdaKeyword</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -210,35 +488,263 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memberService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hf-sdk-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\MyWork\hf-sdk-scala\src\main" />
-    </key>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SDKMain">
+    <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hf-sdk-scala" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tmain" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Tmain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hf-sdk-scala" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SDKMain" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="SDKMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hf-sdk-scala" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.wanda.blockchain.fabric.sdk.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.wanda.blockchain.fabric.sdk.util.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hf-sdk-scala" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -248,7 +754,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -256,14 +762,15 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -276,7 +783,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -284,12 +791,13 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -314,7 +822,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="arquillianRunConfiguration">
@@ -373,17 +881,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
@@ -404,26 +901,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -516,8 +993,8 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -532,27 +1009,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -580,6 +1036,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -611,50 +1073,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -677,6 +1096,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
@@ -692,6 +1113,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
@@ -729,47 +1152,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <module name="hf-sdk-scala" />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -780,126 +1162,29 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hf-sdk-scala" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
@@ -914,12 +1199,28 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Application.main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Tmain" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SDKMain" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.SDKMain" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Tmain" />
+        <item index="3" class="java.lang.String" itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1486298653596" />
+    <option name="lastUpdateTimestamp" value="1486729687219" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -946,7 +1247,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1486298631549" />
+        <entry key="$PROJECT_DIR$" value="1486729595390" />
       </map>
     </option>
     <option name="externalProjectsViewState">
@@ -956,91 +1257,96 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="521da651-e212-4aab-add8-efc58e22757e" name="Default" comment="" />
-      <created>1486274146932</created>
+      <changelist id="6d6ca11f-18bf-42fa-ad9f-ea8df69676ac" name="Default" comment="" />
+      <created>1486729645384</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1486274146932</updated>
-      <workItem from="1486274152832" duration="13989000" />
-      <workItem from="1486294262604" duration="4938000" />
+      <updated>1486729645384</updated>
+      <workItem from="1486729656459" duration="2711000" />
+      <workItem from="1486733361341" duration="14746000" />
+      <workItem from="1486964811543" duration="5531000" />
+      <workItem from="1486970768373" duration="10597000" />
+      <workItem from="1487753761791" duration="2193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18927000" />
+    <option name="totallyTimeSpent" value="35778000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.47408208" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.52591795" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.49784017" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4201726" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.52591795" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.47408208" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.49784017" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41316074" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1049,45 +1355,15 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.sbt">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SDKMain.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/protobuf/msp/mspconfig.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/protobuf/table.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/protobuf/common/common.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1095,144 +1371,383 @@
     <entry file="file://$PROJECT_DIR$/project/build.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/protobuf/msp/mspconfig.proto">
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/table/Column.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/protobuf/common/common.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/protobuf/table.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="1092">
+          <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/scalapb.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/scalapb.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/peer/peer/PeerID.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/peer/peer/PeerProto.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/common/common/Status.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/protobuf_external/scalapb/scalapb.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/protobuf_external/google/protobuf/any.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1794">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala" />
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/protobuf/table.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/peer/transaction/Transaction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/protobuf/peer/transaction.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2372">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/protobuf/peer/peer.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/peer/peer/PeerEndpoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.google.protobuf/protobuf-java/srcs/protobuf-java-3.2.0-sources.jar!/com/google/protobuf/CodedInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5330">
+          <caret line="237" column="25" lean-forward="false" selection-start-line="237" selection-start-column="25" selection-end-line="237" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/table/Column.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="206" column="24" lean-forward="true" selection-start-line="206" selection-start-column="24" selection-end-line="206" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/common/configuration/ConfigurationItem.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="230" column="16" lean-forward="false" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="70" column="7" lean-forward="false" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/peer/peer/EndorserGrpc.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.11/src_managed/main/org/hyperledger/fabric/protos/peer/transaction/TransactionAction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1838">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/User.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/RegistrationRequest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/scala_2.10/sbt_0.13/com.thesamet/sbt-protoc/srcs/sbt-protoc-0.99.3-sources.jar!/sbtprotoc/ProtocPlugin.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/package.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Peer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="286">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Orderer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/events/EventHub.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/KeyValStore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.trueaccord.scalapb/compilerplugin_2.10/jars/compilerplugin_2.10-0.5.47.jar!/com/trueaccord/scalapb/compiler/Version.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/util/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="234">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/util/Try.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4914">
+          <caret line="197" column="24" lean-forward="false" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/EnrollmentRequest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="468">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/security/CryptoPrimitives.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="67" column="83" lean-forward="false" selection-start-line="67" selection-start-column="83" selection-end-line="67" selection-end-column="83" />
+          <folding>
+            <element signature="e#50#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.7-sources.jar!/com/google/gson/JsonObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="52" column="11" lean-forward="false" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar!/scala/package.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/exception/BaseException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/exception/EnrollmentException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/srcs/bcprov-jdk15on-1.56-sources.jar!/org/bouncycastle/util/encoders/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Enrollment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="e#41#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServicesFabricCAImpl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2184">
+          <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/memberService/MemberServices.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="51" column="53" lean-forward="false" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+          <folding>
+            <element signature="e#55#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/util/SDKUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="e#46#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/Predef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/Chain.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="161" column="8" lean-forward="false" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
+          <folding>
+            <element signature="e#41#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/GetTCertBatchRequest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SDKMain.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/wanda/blockchain/fabric/sdk/HFClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="e#41#139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
+      <state key="Copyright.UI">
         <settings>
-          <artifact-editor />
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.11.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>hf-sdk-scala</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1241,18 +1756,6 @@
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>SBT: com.google.auth:google-auth-library-credentials:0.4.0:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

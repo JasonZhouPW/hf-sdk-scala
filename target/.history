@@ -23,3 +23,9 @@ compile
 last compile:protoGenerate
 last compile:protocGenerate
 compile
+build
+clean
+compile
+clean
+exit
+compile
