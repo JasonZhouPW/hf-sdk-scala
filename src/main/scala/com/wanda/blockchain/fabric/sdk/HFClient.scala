@@ -26,5 +26,6 @@ class HFClient {
   def newChain(name:String) = {
     val newChain = new Chain(name,this)
     chains += ("a"->newChain)
+    newChain
   }
 }
