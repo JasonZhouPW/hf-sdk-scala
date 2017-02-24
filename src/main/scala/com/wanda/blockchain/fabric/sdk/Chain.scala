@@ -4,6 +4,8 @@ import com.wanda.blockchain.fabric.sdk.events.EventHub
 import com.wanda.blockchain.fabric.sdk.memberService.{MemberServices, MemberServicesFabricCAImpl}
 import com.wanda.blockchain.fabric.sdk.security.CryptoPrimitives
 import com.wanda.blockchain.fabric.sdk.util.SDKUtil._
+import org.apache.commons.logging.LogFactory
+import org.hyperledger.fabric.protos.peer.proposal_response.ProposalResponse
 
 import scala.beans.BeanProperty
 import scala.collection.mutable
@@ -13,6 +15,7 @@ import scala.collection.mutable
   */
 class Chain(val name: String, val client: HFClient) {
 
+  private[this] val logger = LogFactory.getLog(this.getClass)
   /*  //Name of the chain
     val name: String = name*/
 
@@ -152,50 +155,65 @@ class Chain(val name: String, val client: HFClient) {
 
   def isPreFetchMode: Boolean = this.preFetchMode
 
-  def isDevMode:Boolean = this.devMode
+  def isDevMode: Boolean = this.devMode
 
   /**
     * initialize the chain
+    *
     * @return
     */
-  def initialize:Chain = {
-    require(peers.size > 0,"Chain need at least one peer.")
-    require(!isEmptyString(name),"Chain initialized with null or empty name.")
-    require(client != null,"Chain initialized with no client.")
-//    require(this.client
+  def initialize: Chain = {
+    require(peers.size > 0, "Chain need at least one peer.")
+    require(!isEmptyString(name), "Chain initialized with null or empty name.")
+    require(client != null, "Chain initialized with no client.")
+    //    require(this.
+    logger.info("initializing.... not implemented....")
     null
   }
 
   /**
     * Enroll a user which has already been registered
+    *
     * @param name
     * @param secret
     * @return
     */
-  def enroll(name:String,secret:String):User = {
-    getMember(name) match{
-      case Some(user) => val enrollment = if(!user.isEnrolled) user.enroll(secret)
-                    else user.getEnrollment
-                    members += (name -> user)
-                    user
+  def enroll(name: String, secret: String): User = {
+    getMember(name) match {
+      case Some(user) => val enrollment = if (!user.isEnrolled) user.enroll(secret)
+      else user.getEnrollment
+        members += (name -> user)
+        user
       case None => null
     }
   }
 
+
+  def sendInstallProposal(request: InstallProposalRequest, peers: List[Peer]): List[ProposalResponse] = {
+    require(request != null, "sendInstallProposal request is null")
+    require(peers != null, "sendInstallProposal peers is null.")
+    require(!peers.isEmpty,"sendInstallProposal peers to send to is empty")
+    require(isInitialized,"sendInstallProposal on chain not initialized")
+
+    val transactionContext = new TransactionContext
+
+  }
+
   /**
     * Get the user by name
+    *
     * @param name
     * @return
     */
-  def getMember(name:String):Option[User] = {
-    if(null == keyValueStore){
+  def getMember(name: String): Option[User] = {
+    if (null == keyValueStore) {
       None
-    }else if(null == memberServices){
+    } else if (null == memberServices) {
       None
-    }else{
+    } else {
       members.get(name) match {
         case Some(user) => Some(user)
-        case _ => val user = new User(name,this)
+        case _ => val user = new User(name, this)
           user.restoreState
           Some(user)
       }

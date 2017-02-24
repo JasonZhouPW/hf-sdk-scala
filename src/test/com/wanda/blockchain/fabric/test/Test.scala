@@ -36,6 +36,20 @@ object Test extends App{
     chain.setKeyValueStore(new FileKeyValStore(fileStore.getAbsolutePath))
     chain.enroll("admin","adminpw")
 
+    chain.initialize
+
+    val peers = chain.getPeers
+    val orderers = chain.getOrderers
+
+    println("creating install proposal...")
+
+    val installProposalRequest = client.newInstallProposalRequest
+    installProposalRequest.setChaincodeName(CHAIN_CODE_NAME)
+    installProposalRequest.setChaincodePath(CHAIN_CODE_PATH)
+    installProposalRequest.setChaincodeVersion(CHAIN_CODE_VERSION)
+
+    val resonses = chain.send
+
   }
 
   def constructChain(client:HFClient):Unit = {

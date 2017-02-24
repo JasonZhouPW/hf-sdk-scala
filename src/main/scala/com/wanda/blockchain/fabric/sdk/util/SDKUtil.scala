@@ -1,6 +1,6 @@
 package com.wanda.blockchain.fabric.sdk.util
 
-import java.util.Properties
+import java.util.{Properties, UUID}
 
 import io.netty.handler.codec.http.HttpResponse
 import org.apache.http.HttpHost
@@ -83,4 +83,6 @@ object SDKUtil {
 
     responseBody
   }
+
+  def generateUUID = UUID.randomUUID.toString
 }

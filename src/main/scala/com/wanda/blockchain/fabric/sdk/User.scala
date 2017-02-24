@@ -28,7 +28,10 @@ class User extends Serializable {
   var roles:List[String] = _
 
   @BeanProperty
-  var affiliation:String = _ //todo  change to Map(name,value)??????
+  var affiliation:String = _
+
+  @BeanProperty
+  var attrs:Map[String,String] = _
 
   @BeanProperty
   var account:String = _
@@ -146,6 +149,7 @@ class User extends Serializable {
             this.affiliation = state.affiliation
             this.enrollment = state.enrollment
             this.enrollmentSecret = state.enrollmentSecret
+            this.attrs = state.attrs
             this
           }else{
             logger.warn(s"Could not find state of member ${this.name}")
