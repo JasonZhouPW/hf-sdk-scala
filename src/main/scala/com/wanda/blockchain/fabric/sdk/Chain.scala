@@ -6,6 +6,7 @@ import com.wanda.blockchain.fabric.sdk.security.CryptoPrimitives
 import com.wanda.blockchain.fabric.sdk.util.SDKUtil._
 
 import scala.beans.BeanProperty
+import scala.collection.mutable
 
 /**
   * Created by zhou peiwen on 2017/2/11.
@@ -17,7 +18,7 @@ class Chain(val name: String, val client: HFClient) {
 
   //Peers infos
   @BeanProperty
-  var peers: List[Peer] = _
+  var peers: List[Peer] = Nil
 
   //Security flag
   @BeanProperty
@@ -26,9 +27,10 @@ class Chain(val name: String, val client: HFClient) {
   //User catch of this chain
   //TODO: use guava catch instead
   @BeanProperty
-  var members = Map[String, User]()
+  var members = mutable.Map[String, User]()
 
   //tcerts to get in each batch
+  @BeanProperty
   val tcertBatchSize = 200
 
   //The registrar that registers and enrolls new members/users
@@ -36,7 +38,7 @@ class Chain(val name: String, val client: HFClient) {
   var registrar: User = _
 
   //the member service used for this chain
-  var memberServices: MemberServices = _
+  private var memberServices: MemberServices = _
 
   //The kv store uesd for this chain
   @BeanProperty
@@ -65,7 +67,7 @@ class Chain(val name: String, val client: HFClient) {
 
   //The Orderers
   @BeanProperty
-  var orderers: List[Orderer] = _
+  var orderers: List[Orderer] = Nil
 
   //The client of this chain
   /*  @BeanProperty
@@ -77,7 +79,7 @@ class Chain(val name: String, val client: HFClient) {
 
   //event hubs
   @BeanProperty
-  var eventHubs: List[EventHub] = _
+  var eventHubs: List[EventHub] = Nil
 
   /**
     * Get Chain name
@@ -132,9 +134,11 @@ class Chain(val name: String, val client: HFClient) {
     this
   }
 
-  def setMemberServiceUrl(url: String, pem: String): Unit = {
+  def setMemberServiceUrl(url: String, pem: String = null): Unit = {
     this.setMemberServices(new MemberServicesFabricCAImpl(url, pem))
   }
+
+  def getMemberServices = this.memberServices
 
   def setMemberServices(memberServices: MemberServices): Unit = {
     this.memberServices = memberServices
@@ -160,6 +164,43 @@ class Chain(val name: String, val client: HFClient) {
     require(client != null,"Chain initialized with no client.")
 //    require(this.client
     null
+  }
+
+  /**
+    * Enroll a user which has already been registered
+    * @param name
+    * @param secret
+    * @return
+    */
+  def enroll(name:String,secret:String):User = {
+    getMember(name) match{
+      case Some(user) => val enrollment = if(!user.isEnrolled) user.enroll(secret)
+                    else user.getEnrollment
+                    members += (name -> user)
+                    user
+      case None => null
+    }
+  }
+
+  /**
+    * Get the user by name
+    * @param name
+    * @return
+    */
+  def getMember(name:String):Option[User] = {
+    if(null == keyValueStore){
+      None
+    }else if(null == memberServices){
+      None
+    }else{
+      members.get(name) match {
+        case Some(user) => Some(user)
+        case _ => val user = new User(name,this)
+          user.restoreState
+          Some(user)
+      }
+
+    }
   }
 
 }

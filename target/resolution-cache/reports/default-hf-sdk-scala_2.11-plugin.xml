@@ -7,7 +7,94 @@
 		revision="1.0"
 		conf="plugin"
 		confs="compile, runtime, test, provided, optional, protobuf, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170210212211"/>
+		date="20170224112740"/>
 	<dependencies>
+		<module organisation="com.artima.supersafe" name="supersafe_2.11.5">
+			<revision name="1.1.0" status="release" pubdate="20160715153949" resolver="Artima Maven Repository" artresolver="Artima Maven Repository" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<metadata-artifact status="successful" details="" size="1483" time="2965" location="C:\Users\dell\.ivy2\cache\com.artima.supersafe\supersafe_2.11.5\ivy-1.1.0.xml" searched="true" original-local-location="C:\Users\dell\.ivy2\cache\com.artima.supersafe\supersafe_2.11.5\ivy-1.1.0.xml.original" origin-is-local="false" origin-location="http://repo.artima.com/releases/com/artima/supersafe/supersafe_2.11.5/1.1.0/supersafe_2.11.5-1.1.0.pom"/>
+				<caller organisation="default" name="hf-sdk-scala_2.11" conf="plugin" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="supersafe_2.11.5" type="jar" ext="jar" status="successful" details="" size="191729" time="6918" location="C:\Users\dell\.ivy2\cache\com.artima.supersafe\supersafe_2.11.5\jars\supersafe_2.11.5-1.1.0.jar">
+						<origin-location is-local="false" location="http://repo.artima.com/releases/com/artima/supersafe/supersafe_2.11.5/1.1.0/supersafe_2.11.5-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.11.5" status="release" pubdate="20150107083200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3167" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-compiler\ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.5/scala-compiler-2.11.5.pom"/>
+				<caller organisation="com.artima.supersafe" name="supersafe_2.11.5" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.1.0"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="14213892" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.5.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.5/scala-compiler-2.11.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.3" status="release" pubdate="20141215082100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2837" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="2.11.5"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="no" details="" size="415523" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.3" status="release" pubdate="20141205041800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3048" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.3/scala-xml_2.11-1.0.3.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="2.11.5"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="647893" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.3/scala-xml_2.11-1.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.5" status="release" pubdate="20150107083200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.5/scala-reflect-2.11.5.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.11.5"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4454732" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.5.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.5/scala-reflect-2.11.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.5" status="release" pubdate="20150107083200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.5/scala-library-2.11.5.pom"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.0.3"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.11.5"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="1.0.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.11.5"/>
+				<caller organisation="com.artima.supersafe" name="supersafe_2.11.5" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5576839" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.5.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.5/scala-library-2.11.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.5"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.0.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.5"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="1.0.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
 	</dependencies>
 </ivy-report>

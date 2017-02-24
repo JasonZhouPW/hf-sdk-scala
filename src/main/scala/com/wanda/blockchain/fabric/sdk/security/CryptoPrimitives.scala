@@ -1,10 +1,13 @@
 package com.wanda.blockchain.fabric.sdk.security
 
 import java.io.StringWriter
-import java.security.{KeyPair, KeyPairGenerator, SecureRandom}
+import java.security.{KeyPair, KeyPairGenerator, SecureRandom, Security}
 import java.security.spec.ECGenParameterSpec
 import javax.security.auth.x500.X500Principal
 
+import com.wanda.blockchain.fabric.sdk.helper.Config
+import com.wanda.blockchain.fabric.sdk.util.SDKUtil
+import org.apache.commons.logging.LogFactory
 import org.bouncycastle.jce.provider.BouncyCastleProvider
 import org.bouncycastle.openssl.jcajce.JcaPEMWriter
 import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder
@@ -18,13 +21,40 @@ import scala.util.{Failure, Success, Try}
 /**
   * Created by zhou peiwen on 2017/2/13.
   */
-class CryptoPrimitives(val hashAlgorithm:String,val securityLevel:Int) {
+class CryptoPrimitives{
+
+  private[this] val logger = LogFactory.getLog(this.getClass)
 
   private val SECURITY_PROVIDER = BouncyCastleProvider.PROVIDER_NAME;
 
   @BeanProperty
   var curveName:String = _
 
+  var hashAlgorithm:String = Config.getHashAlgorithm
+
+  var securityLevel:Int = Config.getSecurityLevel
+
+  def this(hashAlgorithm:String,securityLevel:Int){
+    this
+    this.hashAlgorithm = hashAlgorithm
+    this.securityLevel = securityLevel
+    Security.addProvider(new BouncyCastleProvider)
+    init
+  }
+
+  /**
+    * init the cryptoprimitives
+    */
+  private def init = {
+    require(this.securityLevel == 256 || this.securityLevel == 384,s"Illegal level ${this.securityLevel}, only support 256 and 384 for now.")
+    require(!SDKUtil.isEmptyString(this.hashAlgorithm) && (this.hashAlgorithm.equalsIgnoreCase("SHA2") || this.hashAlgorithm.equalsIgnoreCase("SHA3")),
+    s"Illegal hash function family:${this.hashAlgorithm}, must be either SHA2 or SHA3.")
+
+    this.curveName = this.securityLevel match{
+      case 256 => "P-256"
+      case 384 => "secp384r1"
+    }
+  }
 
   def ecdsaKeyGen = generateKey("ECDSA",this.curveName)
 
@@ -42,7 +72,9 @@ class CryptoPrimitives(val hashAlgorithm:String,val securityLevel:Int) {
       g.initialize(ecGenSpec,new SecureRandom)
       Success(g.generateKeyPair)
     }catch{
-      case e:Exception => Failure(e)
+      case e:Exception =>
+        logger.error(s"Error when generateKey($encryptionName,$curveName)",e)
+        Failure(e)
     }
 
   }

@@ -9,10 +9,10 @@
 		extra-sbtVersion="0.13"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170210202719"/>
+		date="20170224112515"/>
 	<dependencies>
 		<module organisation="com.trueaccord.scalapb" name="compilerplugin_2.10">
-			<revision name="0.5.47" status="release" pubdate="20170109102444" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+			<revision name="0.5.47" status="release" pubdate="20170109102444" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3330" time="0" location="C:\Users\dell\.ivy2\cache\com.trueaccord.scalapb\compilerplugin_2.10\ivy-0.5.47.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/trueaccord/scalapb/compilerplugin_2.10/0.5.47/compilerplugin_2.10-0.5.47.pom"/>
 				<caller organisation="default" name="hf-sdk-scala-build" conf="compile, runtime-internal, runtime, optional" rev="0.5.47" rev-constraint-default="0.5.47" rev-constraint-dynamic="0.5.47" callerrev="0.1-SNAPSHOT"/>
@@ -24,7 +24,7 @@
 			</revision>
 		</module>
 		<module organisation="com.trueaccord.scalapb" name="protoc-bridge_2.10">
-			<revision name="0.2.5" status="release" pubdate="20161128095601" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/trueaccord/protoc-bridge" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+			<revision name="0.2.5" status="release" pubdate="20161128095601" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/trueaccord/protoc-bridge" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3002" time="0" location="C:\Users\dell\.ivy2\cache\com.trueaccord.scalapb\protoc-bridge_2.10\ivy-0.2.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/trueaccord/scalapb/protoc-bridge_2.10/0.2.5/protoc-bridge_2.10-0.2.5.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="compilerplugin_2.10" conf="default, compile, runtime, master" rev="0.2.5" rev-constraint-default="0.2.5" rev-constraint-dynamic="0.2.5" callerrev="0.5.47"/>
@@ -45,7 +45,7 @@
 			</revision>
 		</module>
 		<module organisation="com.trueaccord.scalapb" name="scalapb-runtime_2.10">
-			<revision name="0.5.47" status="release" pubdate="20170109102436" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+			<revision name="0.5.47" status="release" pubdate="20170109102436" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3404" time="0" location="C:\Users\dell\.ivy2\cache\com.trueaccord.scalapb\scalapb-runtime_2.10\ivy-0.5.47.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/trueaccord/scalapb/scalapb-runtime_2.10/0.5.47/scalapb-runtime_2.10-0.5.47.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="compilerplugin_2.10" conf="default, compile, runtime, master" rev="0.5.47" rev-constraint-default="0.5.47" rev-constraint-dynamic="0.5.47" callerrev="0.5.47"/>
@@ -57,7 +57,7 @@
 			</revision>
 		</module>
 		<module organisation="com.lihaoyi" name="fastparse_2.10">
-			<revision name="0.4.2" status="release" pubdate="20161022173100" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/scala-parser" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+			<revision name="0.4.2" status="release" pubdate="20161022173100" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/scala-parser" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
 				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="3586" time="0" location="C:\Users\dell\.ivy2\cache\com.lihaoyi\fastparse_2.10\ivy-0.4.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/lihaoyi/fastparse_2.10/0.4.2/fastparse_2.10-0.4.2.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="scalapb-runtime_2.10" conf="compile, runtime" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="0.5.47"/>
@@ -69,7 +69,7 @@
 			</revision>
 		</module>
 		<module organisation="com.lihaoyi" name="fastparse-utils_2.10">
-			<revision name="0.4.2" status="release" pubdate="20161022173021" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/scala-parser" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+			<revision name="0.4.2" status="release" pubdate="20161022173021" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/scala-parser" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
 				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="3453" time="0" location="C:\Users\dell\.ivy2\cache\com.lihaoyi\fastparse-utils_2.10\ivy-0.4.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/lihaoyi/fastparse-utils_2.10/0.4.2/fastparse-utils_2.10-0.4.2.pom"/>
 				<caller organisation="com.lihaoyi" name="fastparse_2.10" conf="compile, runtime" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="0.4.2"/>
@@ -81,7 +81,7 @@
 			</revision>
 		</module>
 		<module organisation="com.lihaoyi" name="sourcecode_2.10">
-			<revision name="0.1.3" status="release" pubdate="20161022013013" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/sourcecode" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+			<revision name="0.1.3" status="release" pubdate="20161022013013" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/sourcecode" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
 				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="3025" time="0" location="C:\Users\dell\.ivy2\cache\com.lihaoyi\sourcecode_2.10\ivy-0.1.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/lihaoyi/sourcecode_2.10/0.1.3/sourcecode_2.10-0.1.3.pom"/>
 				<caller organisation="com.lihaoyi" name="fastparse-utils_2.10" conf="compile, runtime" rev="0.1.3" rev-constraint-default="0.1.3" rev-constraint-dynamic="0.1.3" callerrev="0.4.2"/>
@@ -94,7 +94,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scalamacros" name="quasiquotes_2.10">
-			<revision name="2.1.0" status="release" pubdate="20151120152723" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+			<revision name="2.1.0" status="release" pubdate="20151120152723" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
 				<metadata-artifact status="no" details="" size="2775" time="0" location="C:\Users\dell\.ivy2\cache\org.scalamacros\quasiquotes_2.10\ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scalamacros/quasiquotes_2.10/2.1.0/quasiquotes_2.10-2.1.0.pom"/>
 				<caller organisation="com.lihaoyi" name="fastparse-utils_2.10" conf="compile, runtime" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="0.4.2"/>
@@ -108,7 +108,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.10.4" status="release" pubdate="20140319054700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="2.10.4" status="release" pubdate="20140319054700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
 				<metadata-artifact status="no" details="" size="2680" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="compilerplugin_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.6" callerrev="0.5.47"/>
@@ -121,7 +121,7 @@
 			</revision>
 		</module>
 		<module organisation="com.trueaccord.lenses" name="lenses_2.10">
-			<revision name="0.4.9" status="release" pubdate="20161128095745" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/trueaccord/lenses" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+			<revision name="0.4.9" status="release" pubdate="20161128095745" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/trueaccord/lenses" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2810" time="0" location="C:\Users\dell\.ivy2\cache\com.trueaccord.lenses\lenses_2.10\ivy-0.4.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/trueaccord/lenses/lenses_2.10/0.4.9/lenses_2.10-0.4.9.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="scalapb-runtime_2.10" conf="compile, runtime" rev="0.4.9" rev-constraint-default="0.4.9" rev-constraint-dynamic="0.4.9" callerrev="0.5.47"/>
@@ -133,7 +133,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.10.4" status="release" pubdate="20140319054600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+			<revision name="2.10.4" status="release" pubdate="20140319054600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
 				<metadata-artifact status="no" details="" size="2517" time="0" location="C:\Users\dell\.ivy2\cache\org.scala-lang\scala-library\ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="compilerplugin_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.6" callerrev="0.5.47"/>
@@ -154,7 +154,7 @@
 			</revision>
 		</module>
 		<module organisation="com.thesamet" name="sbt-protoc">
-			<revision name="0.99.3" status="release" pubdate="20161206121937" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/thesamet/sbt-protoc" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="0.99.3" status="release" pubdate="20161206121937" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/thesamet/sbt-protoc" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3306" time="0" location="C:\Users\dell\.ivy2\cache\scala_2.10\sbt_0.13\com.thesamet\sbt-protoc\ivy-0.99.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thesamet/sbt-protoc_2.10_0.13/0.99.3/sbt-protoc-0.99.3.pom"/>
 				<caller organisation="default" name="hf-sdk-scala-build" conf="compile, runtime-internal, runtime, optional" rev="0.99.3" rev-constraint-default="0.99.3" rev-constraint-dynamic="0.99.3" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
@@ -166,7 +166,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-io" name="commons-io">
-			<revision name="2.5" status="release" pubdate="20160422225236" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+			<revision name="2.5" status="release" pubdate="20160422225236" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
 				<metadata-artifact status="no" details="" size="11462" time="0" location="C:\Users\dell\.ivy2\cache\commons-io\commons-io\ivy-2.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-io/commons-io/2.5/commons-io-2.5.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="protoc-bridge_2.10" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="0.2.5"/>
 				<caller organisation="com.trueaccord.scalapb" name="protoc-bridge_2.10" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="0.2.4"/>
@@ -178,7 +178,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.protobuf" name="protobuf-java">
-			<revision name="3.1.0" status="release" pubdate="20160927080737" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+			<revision name="3.1.0" status="release" pubdate="20160927080737" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
 				<metadata-artifact status="no" details="" size="5220" time="0" location="C:\Users\dell\.ivy2\cache\com.google.protobuf\protobuf-java\ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/google/protobuf/protobuf-java/3.1.0/protobuf-java-3.1.0.pom"/>
 				<caller organisation="com.trueaccord.scalapb" name="compilerplugin_2.10" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.5.47"/>
 				<caller organisation="com.trueaccord.scalapb" name="scalapb-runtime_2.10" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.5.47"/>
@@ -192,13 +192,24 @@
 			</revision>
 		</module>
 		<module organisation="com.github.os72" name="protoc-jar">
-			<revision name="3.1.0.1" status="release" pubdate="20161027225533" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/os72/protoc-jar" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+			<revision name="3.1.0.1" status="release" pubdate="20161027225533" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/os72/protoc-jar" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3197" time="0" location="C:\Users\dell\.ivy2\cache\com.github.os72\protoc-jar\ivy-3.1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/github/os72/protoc-jar/3.1.0.1/protoc-jar-3.1.0.1.pom"/>
 				<caller organisation="com.thesamet" name="sbt-protoc" conf="default, compile, runtime, master" rev="3.1.0.1" rev-constraint-default="3.1.0.1" rev-constraint-dynamic="3.1.0.1" callerrev="0.99.3"/>
 				<artifacts>
 					<artifact name="protoc-jar" type="jar" ext="jar" status="no" details="" size="8943644" time="0" location="C:\Users\dell\.ivy2\cache\com.github.os72\protoc-jar\jars\protoc-jar-3.1.0.1.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/com/github/os72/protoc-jar/3.1.0.1/protoc-jar-3.1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.artima.supersafe" name="sbtplugin">
+			<revision name="1.1.0" status="release" pubdate="20160715153949" resolver="Artima Maven Repository" artresolver="Artima Maven Repository" homepage="" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<metadata-artifact status="successful" details="" size="1651" time="3069" location="C:\Users\dell\.ivy2\cache\scala_2.10\sbt_0.13\com.artima.supersafe\sbtplugin\ivy-1.1.0.xml" searched="true" original-local-location="C:\Users\dell\.ivy2\cache\scala_2.10\sbt_0.13\com.artima.supersafe\sbtplugin\ivy-1.1.0.xml.original" origin-is-local="false" origin-location="http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom"/>
+				<caller organisation="default" name="hf-sdk-scala-build" conf="compile, runtime-internal, runtime, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbtplugin" type="jar" ext="jar" status="successful" details="" size="8302" time="5493" location="C:\Users\dell\.ivy2\cache\scala_2.10\sbt_0.13\com.artima.supersafe\sbtplugin\jars\sbtplugin-1.1.0.jar">
+						<origin-location is-local="false" location="http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

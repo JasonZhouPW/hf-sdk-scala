@@ -5,6 +5,47 @@
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->default(compile)]
+[info] Resolving com.artima.supersafe#sbtplugin;1.1.0 ...
+[debug] sbt-chain: Checking cache for: dependency: com.artima.supersafe#sbtplugin;1.1.0 {compile=[default(compile)]}
+[info] Resolving com.artima.supersafe#sbtplugin;1.1.0 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.artima.supersafe#sbtplugin;1.1.0 {compile=[default(compile)]}
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.artima.supersafe/sbtplugin/scala_2.10/sbt_0.13/1.1.0/ivys/ivy.xml
+[error] Server access Error: Connection timed out: connect url=https://repo.typesafe.com/typesafe/ivy-releases/com.artima.supersafe/sbtplugin/scala_2.10/sbt_0.13/1.1.0/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for com.artima.supersafe#sbtplugin;1.1.0
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.artima.supersafe/sbtplugin/scala_2.10/sbt_0.13/1.1.0/ivys/ivy.xml
+[error] Server access Error: Connection timed out: connect url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.artima.supersafe/sbtplugin/scala_2.10/sbt_0.13/1.1.0/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: no ivy file found for com.artima.supersafe#sbtplugin;1.1.0
+[debug] 		tried C:\Users\dell\.ivy2\local\com.artima.supersafe\sbtplugin\scala_2.10\sbt_0.13\1.1.0\ivys\ivy.xml
+[debug] 	local: no ivy file found for com.artima.supersafe#sbtplugin;1.1.0
+[debug] 		tried https://repo1.maven.org/maven2/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom
+[error] Server access Error: Connection timed out: connect url=https://repo1.maven.org/maven2/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom
+[debug] 	public: no ivy file found for com.artima.supersafe#sbtplugin;1.1.0
+[debug] 		tried http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom
+[debug] 	Artima Maven Repository: found md file for com.artima.supersafe#sbtplugin;1.1.0
+[debug] 		=> http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom (1.1.0)
+[debug] downloading http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom ...
+[debug] 	Artima Maven Repository: downloading http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom
+[debug] 	Artima Maven Repository: downloading http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom.sha1
+[debug] sha1 OK for http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.pom
+[debug] 	[SUCCESSFUL ] com.artima.supersafe#sbtplugin;1.1.0!sbtplugin.pom(pom.original) (3069ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.artima.supersafe/sbtplugin/1.1.0/jars/sbtplugin.jar
+[error] Server access Error: Connection timed out: connect url=https://repo.typesafe.com/typesafe/ivy-releases/com.artima.supersafe/sbtplugin/1.1.0/jars/sbtplugin.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.artima.supersafe/sbtplugin/1.1.0/jars/sbtplugin.jar
+[error] Server access Error: Connection timed out: connect url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.artima.supersafe/sbtplugin/1.1.0/jars/sbtplugin.jar
+[debug] 		tried C:\Users\dell\.ivy2\local\com.artima.supersafe\sbtplugin\1.1.0\jars\sbtplugin.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/artima/supersafe/sbtplugin/1.1.0/sbtplugin-1.1.0.jar
+[error] Server access Error: Connection timed out: connect url=https://repo1.maven.org/maven2/com/artima/supersafe/sbtplugin/1.1.0/sbtplugin-1.1.0.jar
+[debug] 		tried http://repo.artima.com/releases/com/artima/supersafe/sbtplugin/1.1.0/sbtplugin-1.1.0.jar
+[debug] CLIENT ERROR: Not Found url=http://repo.artima.com/releases/com/artima/supersafe/sbtplugin/1.1.0/sbtplugin-1.1.0.jar
+[debug] 	found com.artima.supersafe#sbtplugin;1.1.0 in Artima Maven Repository
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->default(compile)]
 [info] Resolving com.thesamet#sbt-protoc;0.99.3 ...
 [debug] sbt-chain: Checking cache for: dependency: com.thesamet#sbt-protoc;0.99.3 {compile=[default(compile)]}
@@ -603,6 +644,14 @@
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->default(compile)]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->runtime]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->compile]
@@ -1130,6 +1179,14 @@
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [test]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->default(compile)]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->runtime]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->compile]
@@ -2351,6 +2408,14 @@
 [debug] resolving dependencies for configuration 'compile-internal'
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [compile-internal]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->default(compile)]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->runtime]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->compile]
@@ -3363,6 +3428,14 @@
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [runtime-internal]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->default(compile)]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->runtime]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->compile]
@@ -3892,6 +3965,14 @@
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [test]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [runtime]
 [debug] == resolving dependencies for default#hf-sdk-scala-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->default(compile)]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->runtime]
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.artima.supersafe#sbtplugin;1.1.0 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->default(compile)]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->runtime]
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->com.thesamet#sbt-protoc;0.99.3 [compile->compile]
@@ -4951,6 +5032,12 @@
 [debug] == resolving dependencies default#hf-sdk-scala-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
+[debug] 		tried http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.jar
+[info] downloading http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.jar ...
+[debug] 	Artima Maven Repository: downloading http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.jar
+[debug] 	Artima Maven Repository: downloading http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.jar.sha1
+[debug] sha1 OK for http://repo.artima.com/releases/com/artima/supersafe/sbtplugin_2.10_0.13/1.1.0/sbtplugin-1.1.0.jar
+[info] 	[SUCCESSFUL ] com.artima.supersafe#sbtplugin;1.1.0!sbtplugin.jar (5493ms)
 [debug] 	[NOT REQUIRED] com.thesamet#sbt-protoc;0.99.3!sbt-protoc.jar
 [debug] 	[NOT REQUIRED] com.trueaccord.scalapb#compilerplugin_2.10;0.5.47!compilerplugin_2.10.jar
 [debug] 	[NOT REQUIRED] com.github.os72#protoc-jar;3.1.0.1!protoc-jar.jar
@@ -5018,7 +5105,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.7!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1044ms :: artifacts dl 62ms
+[debug] :: resolution report :: resolve 134782ms :: artifacts dl 5588ms
 [debug] 	report for default#hf-sdk-scala-build;0.1-SNAPSHOT compile produced in C:\work\hf-sdk-scala\project\target\resolution-cache\reports\default-hf-sdk-scala-build-compile.xml
 [debug] 	report for default#hf-sdk-scala-build;0.1-SNAPSHOT runtime produced in C:\work\hf-sdk-scala\project\target\resolution-cache\reports\default-hf-sdk-scala-build-runtime.xml
 [debug] 	report for default#hf-sdk-scala-build;0.1-SNAPSHOT test produced in C:\work\hf-sdk-scala\project\target\resolution-cache\reports\default-hf-sdk-scala-build-test.xml
@@ -5032,5 +5119,5 @@
 [debug] 	report for default#hf-sdk-scala-build;0.1-SNAPSHOT docs produced in C:\work\hf-sdk-scala\project\target\resolution-cache\reports\default-hf-sdk-scala-build-docs.xml
 [debug] 	report for default#hf-sdk-scala-build;0.1-SNAPSHOT pom produced in C:\work\hf-sdk-scala\project\target\resolution-cache\reports\default-hf-sdk-scala-build-pom.xml
 [debug] 	report for default#hf-sdk-scala-build;0.1-SNAPSHOT scala-tool produced in C:\work\hf-sdk-scala\project\target\resolution-cache\reports\default-hf-sdk-scala-build-scala-tool.xml
-[debug] 	resolve done (1044ms resolve - 62ms download)
+[debug] 	resolve done (134782ms resolve - 5588ms download)
 [info] Done updating.

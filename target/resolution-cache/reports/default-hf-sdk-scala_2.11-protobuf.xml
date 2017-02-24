@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="protobuf"
 		confs="compile, runtime, test, provided, optional, protobuf, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170210212211"/>
+		date="20170224112740"/>
 	<dependencies>
 		<module organisation="com.trueaccord.scalapb" name="scalapb-runtime_2.11">
 			<revision name="0.5.47" status="release" pubdate="20170109102533" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalapb/ScalaPB" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">

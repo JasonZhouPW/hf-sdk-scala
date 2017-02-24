@@ -1,8 +1,10 @@
-[0m[[0minfo[0m] [0mCompiling 16 protobuf files to C:\work\hf-sdk-scala\target\scala-2.11\src_managed\main[0m
+[0m[[0minfo[0m] [0mCompiling 19 protobuf files to C:\work\hf-sdk-scala\target\scala-2.11\src_managed\main[0m
 [0m[[0mdebug[0m] [0mprotoc options:[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\common\msp_principal.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\orderer\configuration.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\common\policies.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\peer\peer.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\common\configtx.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\msp\mspconfig.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\common\common.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\peer\chaincode.proto[0m
@@ -13,6 +15,7 @@
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\peer\transaction.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\msp\identities.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\peer\proposal_response.proto[0m
+[0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\peer\chaincodeshim.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\common\configuration.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\peer\events.proto[0m
 [0m[[0minfo[0m] [0mCompiling schema C:\work\hf-sdk-scala\src\main\protobuf\peer\chaincodeevent.proto[0m

@@ -18,6 +18,6 @@ trait KeyValStore {
     * @param name
     * @param value
     */
-  def setValue(name:String,value:String):String
+  def setValue(name:String,value:String):Unit
 
 }

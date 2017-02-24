@@ -7,11 +7,30 @@ import scala.collection.mutable
 
 object SDKMain extends App{
 
-  println("hello fabric")
-  val map = mutable.Map[String,String]()
+//  println("hello fabric")
+//  val map = mutable.Map[String,String]()
+//
+//  map += ("aa"->"1")
+//
+//  println(map)
 
-  map += ("aa"->"1")
+  var list = List(1,2,3,4,5)
+  list = list.filter(_ !=2)
 
-  println(map)
+  println(list)
+
+  println(TestObj.hello)
+  TestObj.hi
+}
+
+object TestObj{
+  {
+    println("initial...")
+  }
+  def hello = "hello"
+  def hi = {
+    println("hi")
+  }
+
 
 }
